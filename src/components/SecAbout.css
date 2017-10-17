@@ -1,0 +1,26 @@
+.sec_about {
+  background: #3494E6;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #EC6EAD, #3494E6);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #EC6EAD, #3494E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: black;
+}
+.cont_about{
+  color: white;
+  padding: 4em 3em 4em 6em;
+}
+.cont_about i{
+  padding-right: 13px;
+}
+.title_about{
+  font-size: 22px;
+  font-weight: 900;
+}
+.cont_about p{
+  font-size: 18px;
+  font-weight: 300;
+  padding: 1em 5em 0em 0em;
+}
+.small_p{
+  font-size: 15px;
+  color: darkgray;
+}

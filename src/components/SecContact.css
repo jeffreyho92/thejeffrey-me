@@ -1,0 +1,15 @@
+.sec_contact {
+  background: white;
+  color: black;
+}
+.cont_contact{
+  color: black;
+  padding: 4em 3em 7em 6em;
+  text-align: center;
+}
+.contact_title{
+  color: #363636;
+  font-size: 1.5rem;
+  padding: 2em 0em 2em 0em;
+  line-height: 2em;
+}

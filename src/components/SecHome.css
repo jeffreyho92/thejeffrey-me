@@ -1,0 +1,35 @@
+.sec_home {
+  background: #3494E6;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #EC6EAD, #3494E6);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #EC6EAD, #3494E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  padding: 8em 0em 12em 0em;
+  color: white;
+  top: -1em;
+  text-align: center;
+}
+.pro_img{
+  width: 145px;
+  height: 145px;
+  border-radius: 50%;
+}
+.pro_img:hover {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.title_name{
+  font-size: 40px;
+  padding: 0.3em;
+}
+.title_profile{
+  font-size: 22px;
+  text-align: center;
+}
+.title_hr{
+  border: 0;
+  height: 4px;
+  background: #fff;
+  width: 30px;
+  margin: 1em auto;
+}

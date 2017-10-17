@@ -1,0 +1,26 @@
+.sec_portfolio {
+  background: white;
+  color: black;
+}
+.cont_hero{
+  border-radius: 20px;
+  top: -50px;
+  background: white;
+  color: black;
+  padding: 3em 3em 5em 3em;
+  text-align: center;
+}
+.hero_title{
+  color: #363636;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 2em 0em 2em 0em;
+  line-height: 2em;
+}
+.hero_span{
+  color: white;
+  padding: 0.5em;
+  background: #3494E6;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #EC6EAD, #3494E6);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #EC6EAD, #3494E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
