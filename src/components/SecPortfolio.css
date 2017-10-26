@@ -23,6 +23,8 @@
 .img_portfolio {
     height: 300px;
     overflow: hidden;
+    width: 45%;
+    margin: auto;
 }
 .img_portfolio2 {
     height: 300px;
@@ -31,6 +33,24 @@
     margin: auto;
 }
 .img_portfolio3 {
+    height: 300px;
+    overflow: hidden;
+    width: 70%;
+    margin: auto;
+}
+.img_portfolio4 {
+    height: 300px;
+    overflow: hidden;
+    width: 30%;
+    margin: auto;
+}
+.img_portfolio5 {
+    height: 300px;
+    overflow: hidden;
+    width: 70%;
+    margin: auto;
+}
+.img_portfolio6 {
     height: 300px;
     overflow: hidden;
     width: 70%;
