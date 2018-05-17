@@ -2,18 +2,18 @@
   background: white;
   color: black;
 }
-.cont_portfolio{
+.cont_portfolio {
   background: white;
   color: black;
   padding: 4em 0em 4em 0em;
   text-align: center;
 }
 
-.title_profile2{
+.title_profile2 {
   font-size: 22px;
   padding-top: 15%;
 }
-.title_hr2{
+.title_hr2 {
   border: 0;
   height: 5px;
   background: #000;
@@ -21,40 +21,46 @@
   margin: 1em auto;
 }
 .img_portfolio {
-    height: 300px;
-    overflow: hidden;
-    width: 45%;
-    margin: auto;
+  height: 300px;
+  overflow: hidden;
+  width: 70%;
+  margin: auto;
+}
+.img_portfolio1 {
+  height: 300px;
+  overflow: hidden;
+  width: 45%;
+  margin: auto;
 }
 .img_portfolio2 {
-    height: 300px;
-    overflow: hidden;
-    width: 40%;
-    margin: auto;
+  height: 300px;
+  overflow: hidden;
+  width: 40%;
+  margin: auto;
 }
 .img_portfolio3 {
-    height: 300px;
-    overflow: hidden;
-    width: 70%;
-    margin: auto;
+  height: 300px;
+  overflow: hidden;
+  width: 70%;
+  margin: auto;
 }
 .img_portfolio4 {
-    height: 300px;
-    overflow: hidden;
-    width: 30%;
-    margin: auto;
+  height: 300px;
+  overflow: hidden;
+  width: 30%;
+  margin: auto;
 }
 .img_portfolio5 {
-    height: 300px;
-    overflow: hidden;
-    width: 70%;
-    margin: auto;
+  height: 300px;
+  overflow: hidden;
+  width: 70%;
+  margin: auto;
 }
 .img_portfolio6 {
-    height: 300px;
-    overflow: hidden;
-    width: 70%;
-    margin: auto;
+  height: 300px;
+  overflow: hidden;
+  width: 70%;
+  margin: auto;
 }
 .column img:hover {
   -moz-transform: scale(1.1);
