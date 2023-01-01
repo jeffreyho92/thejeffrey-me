@@ -13,6 +13,13 @@ class SecHome extends React.Component {
         <div className="columns">
           <div className="column">
             <div className="icon_box">
+              <i className="fa fa-cube fa-3x" aria-hidden="true"></i>
+            </div>
+            <h1 className="title_service">Blockchain / Solidity</h1>
+            <p>Blockchain enthusiast, Smart contract developer</p>
+          </div>
+          <div className="column">
+            <div className="icon_box">
               <i className="fa fa-laptop fa-3x" aria-hidden="true"></i>
             </div>
             <h1 className="title_service">Web Development</h1>
@@ -20,17 +27,10 @@ class SecHome extends React.Component {
           </div>
           <div className="column">
             <div className="icon_box">
-              <i className="fa fa-html5 fa-3x" aria-hidden="true"></i>
+              <i className="fa fa-cog fa-3x" aria-hidden="true"></i>
             </div>
-            <h1 className="title_service">Front-end</h1>
-            <p>Javascript, Vue.js, React, CSS3</p>
-          </div>
-          <div className="column">
-            <div className="icon_box">
-              <i className="fa fa-server fa-3x" aria-hidden="true"></i>
-            </div>
-            <h1 className="title_service">Back-end</h1>
-            <p>Nodejs, PHP, Python, APIs, Sysadmin, Devops, SQL</p>
+            <h1 className="title_service">Sofeware Development</h1>
+            <p>Javascript, Python, C#, Electron</p>
           </div>
         </div>
 
@@ -39,24 +39,24 @@ class SecHome extends React.Component {
         <div className="columns">
           <div className="column">
             <div className="icon_box">
-              <i className="fa fa-cog fa-3x" aria-hidden="true"></i>
-            </div>
-            <h1 className="title_service">Sofeware Development</h1>
-            <p>C#, VB, Electron</p>
-          </div>
-          <div className="column">
-            <div className="icon_box">
               <i className="fa fa-mobile fa-4x" aria-hidden="true"></i>
             </div>
             <h1 className="title_service">Apps</h1>
-            <p>Mobile, Hybrid, React Native</p>
+            <p>Mobile, React Native, Hybrid</p>
           </div>
           <div className="column">
             <div className="icon_box">
-              <i className="fa fa-snowflake-o fa-3x" aria-hidden="true"></i>
+              <i className="fa fa-html5 fa-3x" aria-hidden="true"></i>
             </div>
-            <h1 className="title_service">UX/UI DESIGN</h1>
-            <p>UX Design refers to the term User Experience Design</p>
+            <h1 className="title_service">Front-end</h1>
+            <p>ReactJS, VueJS, CSS3</p>
+          </div>
+          <div className="column">
+            <div className="icon_box">
+              <i className="fa fa-server fa-3x" aria-hidden="true"></i>
+            </div>
+            <h1 className="title_service">Back-end</h1>
+            <p>NodeJS, Python, API, Microservice, SQL, Devops</p>
           </div>
         </div>
 

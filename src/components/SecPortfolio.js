@@ -11,6 +11,10 @@ import img7 from "../img/ICT_Helpdesk.png";
 import img8 from "../img/coin_calendar.jpg";
 import img9 from "../img/coldblood_pwa.jpg";
 import img10 from "../img/CoinCalendar.png";
+import img11 from "../img/staking-dapp.png";
+import img12 from "../img/random-banana-nft.png";
+import img13 from "../img/thebookme.png";
+import img14 from "../img/private-ecommerce-app.png";
 
 class SecPortfolio extends React.Component {
   constructor(props) {
@@ -25,7 +29,11 @@ class SecPortfolio extends React.Component {
       lightbox7IsOpen: false,
       lightbox8IsOpen: false,
       lightbox9IsOpen: false,
-      lightbox10IsOpen: false
+      lightbox10IsOpen: false,
+      lightbox11IsOpen: false,
+      lightbox12IsOpen: false,
+      lightbox13IsOpen: false,
+      lightbox14IsOpen: false,
     };
     this.closeLightbox = this.closeLightbox.bind(this);
   }
@@ -40,7 +48,11 @@ class SecPortfolio extends React.Component {
       lightbox7IsOpen: false,
       lightbox8IsOpen: false,
       lightbox9IsOpen: false,
-      lightbox10IsOpen: false
+      lightbox10IsOpen: false,
+      lightbox11IsOpen: false,
+      lightbox12IsOpen: false,
+      lightbox13IsOpen: false,
+      lightbox14IsOpen: false,
     });
   }
   openLightbox(number, event) {
@@ -56,6 +68,10 @@ class SecPortfolio extends React.Component {
     var lightbox8 = false;
     var lightbox9 = false;
     var lightbox10 = false;
+    var lightbox11 = false;
+    var lightbox12 = false;
+    var lightbox13 = false;
+    var lightbox14 = false;
     if (number == 1) {
       lightbox1 = true;
     } else if (number == 2) {
@@ -76,6 +92,14 @@ class SecPortfolio extends React.Component {
       lightbox9 = true;
     } else if (number == 10) {
       lightbox10 = true;
+    } else if (number == 11) {
+      lightbox11 = true;
+    } else if (number == 12) {
+      lightbox12 = true;
+    } else if (number == 13) {
+      lightbox13 = true;
+    } else if (number == 14) {
+      lightbox14 = true;
     }
 
     this.setState({
@@ -88,7 +112,11 @@ class SecPortfolio extends React.Component {
       lightbox7IsOpen: lightbox7,
       lightbox8IsOpen: lightbox8,
       lightbox9IsOpen: lightbox9,
-      lightbox10IsOpen: lightbox10
+      lightbox10IsOpen: lightbox10,
+      lightbox11IsOpen: lightbox11,
+      lightbox12IsOpen: lightbox12,
+      lightbox13IsOpen: lightbox13,
+      lightbox14IsOpen: lightbox14,
     });
   }
   render() {
@@ -101,13 +129,18 @@ class SecPortfolio extends React.Component {
 
           <div className="columns">
             <div className="column">
-              <h1 className="title_profile2">ICT helpdesk</h1>
+              <h1 className="title_profile2">Staking dApp</h1>
+              <p>Staking and Reward</p>
               <hr className="title_hr2" />
-              <p>Customize, React, Email notifications</p>
+              <p>
+                Solidity staking smart contract
+                <br/>
+                <a href='https://staking-dapp.on.fleek.co' target='_blank'>https://staking-dapp.on.fleek.co</a>
+              </p>
             </div>
             <div className="column">
               <div className="img_portfolio">
-                <img src={img7} onClick={e => this.openLightbox(7, e)} />
+                <img src={img11} onClick={e => this.openLightbox(11, e)} />
               </div>
             </div>
           </div>
@@ -117,13 +150,56 @@ class SecPortfolio extends React.Component {
 
           <div className="columns">
             <div className="column">
-              <h1 className="title_profile2">Task Management</h1>
+              <h1 className="title_profile2">Random Banana NFT</h1>
+              <p>Powered by Chainlink VRF</p>
               <hr className="title_hr2" />
-              <p>Customize, Vuejs</p>
+              <p>
+                On-chain NFT, Base64 SVG, Chainlink randomize
+                <br/>
+                <a href='https://random-banana-nft.on.fleek.co' target='_blank'>https://random-banana-nft.on.fleek.co</a>
+              </p>
             </div>
             <div className="column">
-              <div className="img_portfolio3">
-                <img src={img3} onClick={e => this.openLightbox(3, e)} />
+              <div className="img_portfolio">
+                <img src={img12} onClick={e => this.openLightbox(12, e)} />
+              </div>
+            </div>
+          </div>
+
+          <hr />
+          <br />
+
+          <h1 className="title_profile">Software Development</h1>
+          <br />
+          <br />
+
+          <div className="columns">
+            <div className="column">
+              <h1 className="title_profile2">Thebookme</h1>
+              <p>Booking App, Mobile and Web</p>
+              <hr className="title_hr2" />
+              <p>ReactJS, React Native, iOS, Android</p>
+            </div>
+            <div className="column">
+              <div className="img_portfolio">
+                <img src={img13} onClick={e => this.openLightbox(13, e)} />
+              </div>
+            </div>
+          </div>
+
+          <hr />
+          <br />
+
+          <div className="columns">
+            <div className="column">
+              <h1 className="title_profile2">Private Ecommerce App</h1>
+              <p>Ecommerce Ordering App</p>
+              <hr className="title_hr2" />
+              <p>React Native, iOS, Android</p>
+            </div>
+            <div className="column">
+              <div className="img_portfolio">
+                <img src={img14} onClick={e => this.openLightbox(14, e)} />
               </div>
             </div>
           </div>
@@ -151,7 +227,7 @@ class SecPortfolio extends React.Component {
             <div className="column">
               <h1 className="title_profile2">ColdBlood</h1>
               <hr className="title_hr2" />
-              <p>Customize, PWA, React</p>
+              <p>Customize, PWA, ReactJS</p>
             </div>
             <div className="column">
               <div className="img_portfolio">
@@ -181,9 +257,41 @@ class SecPortfolio extends React.Component {
 
           <div className="columns">
             <div className="column">
+              <h1 className="title_profile2">ICT helpdesk</h1>
+              <hr className="title_hr2" />
+              <p>Customize, ReactJS, Email notifications</p>
+            </div>
+            <div className="column">
+              <div className="img_portfolio">
+                <img src={img7} onClick={e => this.openLightbox(7, e)} />
+              </div>
+            </div>
+          </div>
+
+          <hr />
+          <br />
+
+          <div className="columns">
+            <div className="column">
+              <h1 className="title_profile2">Task Management</h1>
+              <hr className="title_hr2" />
+              <p>Customize, Vuejs</p>
+            </div>
+            <div className="column">
+              <div className="img_portfolio3">
+                <img src={img3} onClick={e => this.openLightbox(3, e)} />
+              </div>
+            </div>
+          </div>
+
+          <hr />
+          <br />
+
+          <div className="columns">
+            <div className="column">
               <h1 className="title_profile2">Mr Tailor</h1>
               <hr className="title_hr2" />
-              <p>E-Commerce, Wordpress</p>
+              <p>E-Commerce, Wordpress, Self-hosted</p>
             </div>
             <div className="column">
               <div className="img_portfolio1">
@@ -195,7 +303,7 @@ class SecPortfolio extends React.Component {
           <hr />
           <br />
 
-          <div className="columns">
+          {/* <div className="columns">
             <div className="column">
               <h1 className="title_profile2">Sekenhan</h1>
               <hr className="title_hr2" />
@@ -209,7 +317,7 @@ class SecPortfolio extends React.Component {
           </div>
 
           <hr />
-          <br />
+          <br /> */}
 
           <div className="columns">
             <div className="column">
@@ -266,6 +374,10 @@ class SecPortfolio extends React.Component {
           <Lightbox images={[{ src: img8 }]} isOpen={this.state.lightbox8IsOpen} onClose={this.closeLightbox} />
           <Lightbox images={[{ src: img9 }]} isOpen={this.state.lightbox9IsOpen} onClose={this.closeLightbox} />
           <Lightbox images={[{ src: img10 }]} isOpen={this.state.lightbox10IsOpen} onClose={this.closeLightbox} />
+          <Lightbox images={[{ src: img11 }]} isOpen={this.state.lightbox11IsOpen} onClose={this.closeLightbox} />
+          <Lightbox images={[{ src: img12 }]} isOpen={this.state.lightbox12IsOpen} onClose={this.closeLightbox} />
+          <Lightbox images={[{ src: img13 }]} isOpen={this.state.lightbox13IsOpen} onClose={this.closeLightbox} />
+          <Lightbox images={[{ src: img14 }]} isOpen={this.state.lightbox14IsOpen} onClose={this.closeLightbox} />
         </div>
       </div>
     );

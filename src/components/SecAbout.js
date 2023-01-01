@@ -2,6 +2,12 @@ import React, { Component } from 'react';
 import './SecAbout.css';
 import img1 from '../img/mr.png';
 
+function calculateAge(birthday) {
+  var ageDifMs = Date.now() - new Date(birthday);
+  var ageDate = new Date(ageDifMs); // miliseconds from epoch
+  return Math.abs(ageDate.getUTCFullYear() - 1970);
+}
+
 class SecAbout extends React.Component {
   render() {
     return <div className="sec_about" id="about">
@@ -14,7 +20,7 @@ class SecAbout extends React.Component {
             </h1>
             <p>
             I am a passionate Web Development and Sofeware Development who has been working
-            in this field for more than 3 years now.
+            in this field for more than {calculateAge('2015-01-01')} years now.
             <br/>
             My skills are broad: from feasibility study to design, front end to back end development.
             I enjoy each aspect, and love building something awesome from start to finish,
@@ -24,15 +30,19 @@ class SecAbout extends React.Component {
             </p>
           </div>
           <div className="column">
-
             <h1 className="title_about">
               <i className="fa fa-building" aria-hidden="true"></i>
               Work history
             </h1>
             <p>
-              Engineer | Panasonic
+              Team Lead | MHC Asia Group
               <br/>
-              <span className="small_p">2015 - Present</span>
+              <span className="small_p">2018 - Present</span>
+            </p>
+            <p>
+              Software Engineer | Panasonic
+              <br/>
+              <span className="small_p">2015 - 2018</span>
             </p>
 
             <br/><br/>
@@ -51,7 +61,6 @@ class SecAbout extends React.Component {
               <br/>
               <span className="small_p">2015 - Present</span>
             </p>
-
           </div>
         </div>
       </div>
