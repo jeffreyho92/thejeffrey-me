@@ -10,6 +10,8 @@ class SecHome extends React.Component {
       <h1 className="title_profile">Full-stack Developer</h1>
       <hr className="title_hr" />
       Malaysia-base Freelancer
+      <br/>
+      <a href='https://rebuildlab.net' target='_blank'>REBUILD LAB</a>
     </div>;
   }
 }

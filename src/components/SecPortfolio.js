@@ -15,6 +15,9 @@ import img11 from "../img/staking-dapp.png";
 import img12 from "../img/random-banana-nft.png";
 import img13 from "../img/thebookme.png";
 import img14 from "../img/private-ecommerce-app.png";
+import img15 from "../img/hotspot-app.png";
+import img16 from "../img/hotspot-web.png";
+import img17 from "../img/manufacturer-web.png";
 
 class SecPortfolio extends React.Component {
   constructor(props) {
@@ -34,6 +37,9 @@ class SecPortfolio extends React.Component {
       lightbox12IsOpen: false,
       lightbox13IsOpen: false,
       lightbox14IsOpen: false,
+      lightbox15IsOpen: false,
+      lightbox16IsOpen: false,
+      lightbox17IsOpen: false,
     };
     this.closeLightbox = this.closeLightbox.bind(this);
   }
@@ -53,6 +59,9 @@ class SecPortfolio extends React.Component {
       lightbox12IsOpen: false,
       lightbox13IsOpen: false,
       lightbox14IsOpen: false,
+      lightbox15IsOpen: false,
+      lightbox16IsOpen: false,
+      lightbox17IsOpen: false,
     });
   }
   openLightbox(number, event) {
@@ -72,6 +81,9 @@ class SecPortfolio extends React.Component {
     var lightbox12 = false;
     var lightbox13 = false;
     var lightbox14 = false;
+    var lightbox15 = false;
+    var lightbox16 = false;
+    var lightbox17 = false;
     if (number == 1) {
       lightbox1 = true;
     } else if (number == 2) {
@@ -100,6 +112,12 @@ class SecPortfolio extends React.Component {
       lightbox13 = true;
     } else if (number == 14) {
       lightbox14 = true;
+    } else if (number == 15) {
+      lightbox15 = true;
+    } else if (number == 16) {
+      lightbox16 = true;
+    } else if (number == 17) {
+      lightbox17 = true;
     }
 
     this.setState({
@@ -117,6 +135,9 @@ class SecPortfolio extends React.Component {
       lightbox12IsOpen: lightbox12,
       lightbox13IsOpen: lightbox13,
       lightbox14IsOpen: lightbox14,
+      lightbox15IsOpen: lightbox15,
+      lightbox16IsOpen: lightbox16,
+      lightbox17IsOpen: lightbox17,
     });
   }
   render() {
@@ -175,10 +196,44 @@ class SecPortfolio extends React.Component {
 
           <div className="columns">
             <div className="column">
-              <h1 className="title_profile2">Thebookme</h1>
-              <p>Booking App, Mobile and Web</p>
+              <h1 className="title_profile2">Hotspot Booking</h1>
+              <p>Booking Mobile App</p>
               <hr className="title_hr2" />
-              <p>ReactJS, React Native, iOS, Android</p>
+              <p>React Native, iOS, Android</p>
+            </div>
+            <div className="column">
+              <div className="img_portfolio">
+                <img src={img15} onClick={e => this.openLightbox(15, e)} />
+              </div>
+            </div>
+          </div>
+
+          <hr />
+          <br />
+
+          <div className="columns">
+            <div className="column">
+              <h1 className="title_profile2">Hotspot Booking</h1>
+              <p>Booking Website</p>
+              <hr className="title_hr2" />
+              <p>ReactJS, Google Map, Chat Message</p>
+            </div>
+            <div className="column">
+              <div className="img_portfolio">
+                <img src={img16} onClick={e => this.openLightbox(16, e)} />
+              </div>
+            </div>
+          </div>
+
+          <hr />
+          <br />
+
+          <div className="columns">
+            <div className="column">
+              <h1 className="title_profile2">Thebookme</h1>
+              <p>Booking Mobile App</p>
+              <hr className="title_hr2" />
+              <p>React Native, iOS, Android</p>
             </div>
             <div className="column">
               <div className="img_portfolio">
@@ -200,6 +255,23 @@ class SecPortfolio extends React.Component {
             <div className="column">
               <div className="img_portfolio">
                 <img src={img14} onClick={e => this.openLightbox(14, e)} />
+              </div>
+            </div>
+          </div>
+
+          <hr />
+          <br />
+
+          <div className="columns">
+            <div className="column">
+              <h1 className="title_profile2">Manufacturer Operation</h1>
+              <p>Manufacturer Backend System</p>
+              <hr className="title_hr2" />
+              <p>PO, BOM, CRM, Reporting</p>
+            </div>
+            <div className="column">
+              <div className="img_portfolio">
+                <img src={img17} onClick={e => this.openLightbox(17, e)} />
               </div>
             </div>
           </div>
@@ -378,6 +450,9 @@ class SecPortfolio extends React.Component {
           <Lightbox images={[{ src: img12 }]} isOpen={this.state.lightbox12IsOpen} onClose={this.closeLightbox} />
           <Lightbox images={[{ src: img13 }]} isOpen={this.state.lightbox13IsOpen} onClose={this.closeLightbox} />
           <Lightbox images={[{ src: img14 }]} isOpen={this.state.lightbox14IsOpen} onClose={this.closeLightbox} />
+          <Lightbox images={[{ src: img15 }]} isOpen={this.state.lightbox15IsOpen} onClose={this.closeLightbox} />
+          <Lightbox images={[{ src: img16 }]} isOpen={this.state.lightbox16IsOpen} onClose={this.closeLightbox} />
+          <Lightbox images={[{ src: img17 }]} isOpen={this.state.lightbox17IsOpen} onClose={this.closeLightbox} />
         </div>
       </div>
     );
