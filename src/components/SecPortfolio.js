@@ -11,13 +11,14 @@ import img7 from "../img/ICT_Helpdesk.png";
 import img8 from "../img/coin_calendar.jpg";
 import img9 from "../img/coldblood_pwa.jpg";
 import img10 from "../img/CoinCalendar.png";
-import img11 from "../img/staking-dapp.png";
-import img12 from "../img/random-banana-nft.png";
 import img13 from "../img/thebookme.png";
 import img14 from "../img/private-ecommerce-app.png";
 import img15 from "../img/hotspot-app.png";
 import img16 from "../img/hotspot-web.png";
 import img17 from "../img/manufacturer-web.png";
+import img11 from "../img/web3/staking-dapp.png";
+import img12 from "../img/web3/random-banana-nft.png";
+import img18 from "../img/web3/nft-martketplace.jpg";
 
 class SecPortfolio extends React.Component {
   constructor(props) {
@@ -40,6 +41,7 @@ class SecPortfolio extends React.Component {
       lightbox15IsOpen: false,
       lightbox16IsOpen: false,
       lightbox17IsOpen: false,
+      lightbox18IsOpen: false,
     };
     this.closeLightbox = this.closeLightbox.bind(this);
   }
@@ -62,6 +64,7 @@ class SecPortfolio extends React.Component {
       lightbox15IsOpen: false,
       lightbox16IsOpen: false,
       lightbox17IsOpen: false,
+      lightbox18IsOpen: false,
     });
   }
   openLightbox(number, event) {
@@ -84,6 +87,7 @@ class SecPortfolio extends React.Component {
     var lightbox15 = false;
     var lightbox16 = false;
     var lightbox17 = false;
+    var lightbox18 = false;
     if (number == 1) {
       lightbox1 = true;
     } else if (number == 2) {
@@ -118,6 +122,8 @@ class SecPortfolio extends React.Component {
       lightbox16 = true;
     } else if (number == 17) {
       lightbox17 = true;
+    } else if (number == 18) {
+      lightbox18 = true;
     }
 
     this.setState({
@@ -138,6 +144,7 @@ class SecPortfolio extends React.Component {
       lightbox15IsOpen: lightbox15,
       lightbox16IsOpen: lightbox16,
       lightbox17IsOpen: lightbox17,
+      lightbox18IsOpen: lightbox18,
     });
   }
   render() {
@@ -146,6 +153,27 @@ class SecPortfolio extends React.Component {
         <div className="container cont_portfolio">
           <h1 className="title_profile">Portfolio</h1>
           <br />
+          <br />
+
+          <div className="columns">
+            <div className="column">
+              <h1 className="title_profile2">NFT Marketplace</h1>
+              <p>Create new NFT or list existing NFT for sale, withdraw proceeded balance after sold</p>
+              <hr className="title_hr2" />
+              <p>
+                Solidity NFT and marketplace smart contracts
+                <br/>
+                <a href='https://alchemy-nft-marketplace.on.fleek.co' target='_blank'>https://alchemy-nft-marketplace.on.fleek.co</a>
+              </p>
+            </div>
+            <div className="column">
+              <div className="img_portfolio">
+                <img src={img18} onClick={e => this.openLightbox(18, e)} />
+              </div>
+            </div>
+          </div>
+
+          <hr />
           <br />
 
           <div className="columns">
@@ -453,6 +481,7 @@ class SecPortfolio extends React.Component {
           <Lightbox images={[{ src: img15 }]} isOpen={this.state.lightbox15IsOpen} onClose={this.closeLightbox} />
           <Lightbox images={[{ src: img16 }]} isOpen={this.state.lightbox16IsOpen} onClose={this.closeLightbox} />
           <Lightbox images={[{ src: img17 }]} isOpen={this.state.lightbox17IsOpen} onClose={this.closeLightbox} />
+          <Lightbox images={[{ src: img18 }]} isOpen={this.state.lightbox18IsOpen} onClose={this.closeLightbox} />
         </div>
       </div>
     );
