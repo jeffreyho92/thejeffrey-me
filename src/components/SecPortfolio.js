@@ -161,7 +161,7 @@ class SecPortfolio extends React.Component {
               <p>Create new NFT or list existing NFT for sale, withdraw proceeded balance after sold</p>
               <hr className="title_hr2" />
               <p>
-                Solidity NFT and marketplace smart contracts
+                The Graph, IPFS, Solidity smart contracts
                 <br/>
                 <a href='https://alchemy-nft-marketplace.on.fleek.co' target='_blank'>https://alchemy-nft-marketplace.on.fleek.co</a>
               </p>
