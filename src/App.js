@@ -25,7 +25,7 @@ class App extends Component {
         <SecContact />
 
         <p className="footer">
-          © 2017 - {new Date().getFullYear()}  |  Jeffrey Ho  |  jeffreyho92@gmail.com
+          © 2017 - {new Date().getFullYear()}  |  Jeffrey Ho  |  thejeffrey.me@gmail.com
         </p>
       </div>
     );

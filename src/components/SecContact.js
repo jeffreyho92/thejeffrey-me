@@ -11,7 +11,7 @@ class SecAbout extends React.Component {
           <br/>
           I am available for freelance hire
         </h1>
-        <a href="mailto:jeffreyho92@gmail.com">
+        <a href="mailto:thejeffrey.me@gmail.com">
           <span className="hero_span">Hire me</span>
         </a>
       </div>
