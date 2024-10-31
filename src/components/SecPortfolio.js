@@ -19,6 +19,7 @@ import img17 from "../img/manufacturer-web.png";
 import img11 from "../img/web3/staking-dapp.png";
 import img12 from "../img/web3/random-banana-nft.png";
 import img18 from "../img/web3/nft-martketplace.jpg";
+import img19 from "../img/web3/marketplace-ethsg2024.png";
 
 class SecPortfolio extends React.Component {
   constructor(props) {
@@ -42,6 +43,7 @@ class SecPortfolio extends React.Component {
       lightbox16IsOpen: false,
       lightbox17IsOpen: false,
       lightbox18IsOpen: false,
+      lightbox19IsOpen: false,
     };
     this.closeLightbox = this.closeLightbox.bind(this);
   }
@@ -65,6 +67,7 @@ class SecPortfolio extends React.Component {
       lightbox16IsOpen: false,
       lightbox17IsOpen: false,
       lightbox18IsOpen: false,
+      lightbox19IsOpen: false,
     });
   }
   openLightbox(number, event) {
@@ -88,6 +91,7 @@ class SecPortfolio extends React.Component {
     var lightbox16 = false;
     var lightbox17 = false;
     var lightbox18 = false;
+    var lightbox19 = false;
     if (number == 1) {
       lightbox1 = true;
     } else if (number == 2) {
@@ -124,6 +128,8 @@ class SecPortfolio extends React.Component {
       lightbox17 = true;
     } else if (number == 18) {
       lightbox18 = true;
+    } else if (number == 19) {
+      lightbox19 = true;
     }
 
     this.setState({
@@ -145,6 +151,7 @@ class SecPortfolio extends React.Component {
       lightbox16IsOpen: lightbox16,
       lightbox17IsOpen: lightbox17,
       lightbox18IsOpen: lightbox18,
+      lightbox19IsOpen: lightbox19,
     });
   }
   render() {
@@ -153,6 +160,27 @@ class SecPortfolio extends React.Component {
         <div className="container cont_portfolio">
           <h1 className="title_profile">Portfolio</h1>
           <br />
+          <br />
+
+          <div className="columns">
+            <div className="column">
+              <h1 className="title_profile2">Proof of Funds Marketplace</h1>
+              <p>ETHGlobal Singapore 2024 hackathon</p>
+              <hr className="title_hr2" />
+              <p>
+                Sign Protocol - Best Technical Integration of Schema Hooks
+                <br/>
+                <a href='https://ethglobal.com/showcase/snapture-fngbn' target='_blank'>https://ethglobal.com/showcase/snapture-fngbn</a>
+              </p>
+            </div>
+            <div className="column">
+              <div className="img_portfolio">
+                <img src={img19} onClick={e => this.openLightbox(19, e)} />
+              </div>
+            </div>
+          </div>
+
+          <hr />
           <br />
 
           <div className="columns">
@@ -482,6 +510,7 @@ class SecPortfolio extends React.Component {
           <Lightbox images={[{ src: img16 }]} isOpen={this.state.lightbox16IsOpen} onClose={this.closeLightbox} />
           <Lightbox images={[{ src: img17 }]} isOpen={this.state.lightbox17IsOpen} onClose={this.closeLightbox} />
           <Lightbox images={[{ src: img18 }]} isOpen={this.state.lightbox18IsOpen} onClose={this.closeLightbox} />
+          <Lightbox images={[{ src: img19 }]} isOpen={this.state.lightbox19IsOpen} onClose={this.closeLightbox} />
         </div>
       </div>
     );
